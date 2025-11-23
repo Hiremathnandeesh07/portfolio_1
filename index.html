@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandeesh Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  <!-- HEADER -->
+  <header class="max-w-6xl mx-auto p-6 flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div class="w-full md:w-auto flex items-center justify-between">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold">Nandeesh Hiremath</h1>
+        <p class="text-sm text-gray-600">Information Science • Full‑Stack Developer</p>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="navToggle" class="md:hidden ml-4 p-2 rounded-md focus:outline-none focus:ring" aria-expanded="false" aria-controls="mainNav">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <nav id="mainNav" class="hidden md:flex w-full md:w-auto flex-col md:flex-row md:space-x-6 text-sm mt-4 md:mt-0">
+      <a href="#projects" class="block md:inline-block py-2 md:py-0 hover:underline">Projects</a>
+      <a href="#experience" class="block md:inline-block py-2 md:py-0 hover:underline">Experience</a>
+      <a href="#contact" class="block md:inline-block py-2 md:py-0 hover:underline">Contact</a>
+      <a href="/mnt/data/nandeesh_b_h_dentsu.pdf" download class="mt-2 md:mt-0 md:ml-2 inline-block px-4 py-2 bg-black text-white rounded-md">Download CV</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 mt-12 grid md:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="text-3xl md:text-4xl font-extrabold leading-tight">Hi, I'm Nandeesh — I build practical web apps and ML tools.</h2>
+      <p class="mt-4 text-gray-700">Experienced with Oracle APEX, Node.js, Flask and full‑stack development. I focus on shipping real tools that automate workflows and solve real problems.</p>
+      <div class="mt-6 space-x-4 text-sm">
+        <a href="https://hiremathnandeesh07.github.io/MPortfolio/" target="_blank" class="hover:underline">Live Portfolio</a>
+        <a href="https://www.linkedin.com/in/nandeesh2003" target="_blank" class="hover:underline">LinkedIn</a>
+        <a href="mailto:hiremathnandeesh07@gmail.com" class="hover:underline">Email</a>
+      </div>
+    </div>
+    <div class="bg-gray-50 border rounded-xl p-6 shadow-sm">
+      <h3 class="text-lg font-semibold">Snapshot</h3>
+      <ul class="mt-4 text-sm space-y-2 text-gray-700">
+        <li><strong>Location:</strong> Belagavi, Karnataka</li>
+        <li><strong>Degree:</strong> ISE — GIT</li>
+        <li><strong>CGPA:</strong> 8.6 / 10</li>
+        <li><strong>Contact:</strong> +91‑7259634746</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="max-w-6xl mx-auto px-6 mt-16">
+    <h3 class="text-2xl font-bold">Skills</h3>
+
+    <div id="skillsBox" class="mt-6 space-y-8">
+      <!-- Programming Languages -->
+      <div>
+        <h4 class="text-xl font-semibold">Programming Languages</h4>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm">
+          <div class="skill flex items-center gap-2 p-2 bg-gray-50 rounded-md border">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C icon" class="w-5"/>
+            <span>C</span>
+          </div>
+          <div class="skill flex items-center gap-2 p-2 bg-gray-50 rounded-md border">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ icon" class="w-5"/>
+            <span>C++</span>
+          </div>
+          <div class="skill flex items-center gap-2 p-2 bg-gray-50 rounded-md border">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python icon" class="w-5"/>
+            <span>Python</span>
+          </div>
+          <div class="skill flex items-center gap-2 p-2 bg-gray-50 rounded-md border">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 icon" class="w-5"/>
+            <span>HTML</span>
+          </div>
+          <div class="skill flex items-center gap-2 p-2 bg-gray-50 rounded-md border">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 icon" class="w-5"/>
+            <span>CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Technologies -->
+      <div>
+        <h4 class="text-xl font-semibold">Web Technologies</h4>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React icon" class="w-6"/> <span>React</span></div>
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js icon" class="w-6"/> <span>Node.js</span></div>
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask icon" class="w-6"/> <span>Flask</span></div>
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML/CSS icon" class="w-6"/> <span>HTML/CSS</span></div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div>
+        <h4 class="text-xl font-semibold">Databases</h4>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL icon" class="w-6"/> <span>PostgreSQL</span></div>
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle icon" class="w-6"/> <span>Oracle / PL‑SQL</span></div>
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://i.imgur.com/4P9QpEJ.png" alt="Oracle APEX icon" class="w-6"/> <span>Oracle APEX</span></div>
+        </div>
+      </div>
+
+      <!-- Tools & Version Control -->
+      <div>
+        <h4 class="text-xl font-semibold">Tools & Version Control</h4>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git icon" class="w-6"/> <span>Git</span></div>
+        </div>
+      </div>
+
+      <!-- AI & Machine Learning -->
+      <div>
+        <h4 class="text-xl font-semibold">AI & Machine Learning</h4>
+        <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm">
+          <div class="skill flex items-center gap-3 p-2 bg-gray-50 rounded-md border"><img src="https://i.imgur.com/jbTsS3O.png" alt="ML icon" class="w-6"/> <span>ML (SVM, Data Processing)</span></div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 mt-16">
+    <h3 class="text-2xl font-bold">Experience</h3>
+    <div class="p-6 mt-6 border rounded-lg">
+      <h4 class="text-lg font-bold">Application Development Intern — Hindalco Industries</h4>
+      <p class="text-sm text-gray-600 mt-1">Jan 2025 – Jul 2025 • Belagavi / Remote</p>
+      <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2 text-sm">
+        <li>Built an Employee Management System for 1000+ employees in Oracle APEX.</li>
+        <li>Created a Grievance Redressal Portal cutting response time from 60h → 15h.</li>
+        <li>Converted 20+ paper processes into automated APEX workflows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 mt-16">
+    <h3 class="text-2xl font-bold">Projects</h3>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+
+      <!-- Project 1 -->
+      <div class="p-6 border rounded-lg hover:shadow-md bg-white">
+        <img src="https://source.unsplash.com/600x350/?health,technology" class="w-full h-40 object-cover rounded-md mb-4"/>
+        <h4 class="text-lg font-semibold">Health360AI</h4>
+        <p class="mt-3 text-sm text-gray-700">A full healthcare assistant platform featuring AI disease prediction (90% accuracy) using SVM, symptom‑based diagnosis, GenAI chatbot built with LLMs, OTP‑secured appointments, email automation, Firebase authentication, and Flask backend. Designed for real clinical workflows.</p>
+        <div class="flex gap-3 mt-4 text-sm">
+          <a href="https://health360ai.onrender.com" target="_blank" class="px-4 py-2 bg-black text-white rounded-md">Live</a>
+          <a href="https://github.com/hiremathnandeesh07" target="_blank" class="px-4 py-2 border rounded-md">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-6 border rounded-lg hover:shadow-md bg-white">
+        <img src="https://source.unsplash.com/600x350/?ai,gesture" class="w-full h-40 object-cover rounded-md mb-4"/>
+        <h4 class="text-lg font-semibold">Gesture‑Controlled Food Ordering</h4>
+        <p class="mt-3 text-sm text-gray-700">A computer vision–based touchless ordering system using OpenCV & MediaPipe. Users navigate menus using hand gestures, add/remove items, and auto‑generate bills. Built for kiosk‑style, hygiene‑first restaurant use cases.</p>
+        <div class="flex gap-3 mt-4 text-sm">
+          <a href="https://new-portfolio1.onrender.com" target="_blank" class="px-4 py-2 bg-black text-white rounded-md">Live</a>
+          <a href="https://github.com/hiremathnandeesh07" target="_blank" class="px-4 py-2 border rounded-md">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="p-6 border rounded-lg hover:shadow-md bg-white">
+        <img src="https://source.unsplash.com/600x350/?coding,portfolio" class="w-full h-40 object-cover rounded-md mb-4"/>
+        <h4 class="text-lg font-semibold">Portfolio Generator</h4>
+        <p class="mt-3 text-sm text-gray-700">A portfolio‑as‑a‑service platform built with Node.js + Express + PostgreSQL. Users can generate, customize, and share portfolio templates. Scaled to 100+ users with automated template rendering and a clean UI.</p>
+        <div class="flex gap-3 mt-4 text-sm">
+          <a href="https://hiremathnandeesh07.github.io/MPortfolio/" target="_blank" class="px-4 py-2 bg-black text-white rounded-md">Live</a>
+          <a href="https://github.com/hiremathnandeesh07" target="_blank" class="px-4 py-2 border rounded-md">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="p-6 border rounded-lg hover:shadow-md bg-white">
+        <img src="https://source.unsplash.com/600x350/?office,management" class="w-full h-40 object-cover rounded-md mb-4"/>
+        <h4 class="text-lg font-semibold">Employee Management (Oracle APEX)</h4>
+        <p class="mt-3 text-sm text-gray-700">Full internal HR management tool developed during internship. Includes employee records, shift logs, training tracker, automated workflows, HR dashboards, and printable reports. Reduced manual effort by over 60% across teams.</p>
+        <div class="flex gap-3 mt-4 text-sm">
+          <a href="#" class="px-4 py-2 bg-black text-white rounded-md">Live</a>
+          <a href="https://github.com/hiremathnandeesh07" target="_blank" class="px-4 py-2 border rounded-md">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+    <h3 class="text-2xl font-bold mt-12">Certifications</h3>
+    <ul class="mt-4 text-sm space-y-2 text-gray-700">
+      <li>• Python for Data Science – IBM</li>
+      <li>• Machine Learning with Python – Coursera</li>
+      <li>• Oracle APEX Foundations – Oracle University</li>
+      <li>• SQL & Databases – HackerRank Certified</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 mt-20 mb-20">
+    <h3 class="text-3xl font-bold text-center mb-10">Contact Me Via</h3>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- MAP -->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8400135692574!2d74.48726297594292!3d15.86692778478053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf66d1a7472f6b%3A0x9a59093ec9bf5dc7!2sKLS%20Gogte%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1700912345678"
+          width="100%" height="380" class="rounded-lg border"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="bg-white shadow-lg rounded-xl p-6 border">
+        <form class="space-y-4">
+
+          <div>
+            <label class="block text-sm font-medium">Name:</label>
+            <input type="text" required class="w-full border rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-300" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium">Email:</label>
+            <input type="email" required class="w-full border rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-300" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium">Message:</label>
+            <textarea required rows="4" class="w-full border rounded-md p-2 focus:outline-none focus:ring focus:ring-blue-300"></textarea>
+          </div>
+
+          <button type="submit" class="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">Submit</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="flex justify-center space-x-6 mt-10 text-xl">
+      <a href="https://facebook.com" target="_blank" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+      <a href="https://x.com" target="_blank" class="hover:text-black"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://linkedin.com/in/nandeesh2003" target="_blank" class="hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/hiremathnandeesh07" target="_blank" class="hover:text-gray-800"><i class="fab fa-github"></i></a>
+      <a href="mailto:hiremathnandeesh07@gmail.com" class="hover:text-red-600"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <p class="text-center text-sm text-gray-600 mt-4">© <span id="year"></span> Copyright : Made with ❤️ Nandeesh</p>
+  </section>
+
+  <footer class="text-center py-6 border-t text-sm text-gray-600">© <span id="year"></span> Nandeesh Hiremath</footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
