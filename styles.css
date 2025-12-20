@@ -1,26 +1,67 @@
 
-/* Custom styles (minimal — Tailwind handles main styling) */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import a friendly UI font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+:root{
+  --bg: #fbfdff;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --accent: #06b6d4;
+  --accent-2: #7c3aed;
+  --card: #ffffff;
 }
 
-/* Skill card interactions */
-.skill {
-  transition: transform 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
-}
-.skill:hover,
-.skill:focus,
-.skill:focus-visible {
-  transform: translateY(-4px) scale(1.02);
-  background-color: #f3f4f6; /* Tailwind gray-100 */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-}
-.skill:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(59,130,246,0.16); /* subtle blue ring */
+/* Base */
+html,body{height:100%;}
+body{
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  color:var(--text);
+  line-height:1.5;
 }
 
-.skill img {
-  display: block;
-}
+/* Links & focus */
+a, button{transition: all .18s ease;}
+a:focus, button:focus{outline:none; box-shadow:0 0 0 6px rgba(99,102,241,0.06); border-radius:8px}
+
+/* Header */
+header h1{letter-spacing:-0.02em}
+#mainNav a{color:var(--muted); padding:.35rem .5rem; border-radius:8px}
+#mainNav a:hover{color:var(--text); background:rgba(15,23,42,0.03)}
+
+/* Hero & Snapshot card */
+.bg-gray-50{background:linear-gradient(180deg,#fff,#fbfbff); border:1px solid rgba(15,23,42,0.035)}
+
+/* Skill cards */
+.skill{background:var(--card); border:1px solid rgba(15,23,42,0.04); padding:.6rem; border-radius:12px; display:flex; align-items:center; gap:.6rem; transition:transform .2s ease, box-shadow .2s ease}
+.skill:hover{transform:translateY(-6px); box-shadow:0 12px 30px rgba(2,6,23,0.08)}
+.skill img{display:block}
+
+/* Projects */
+#projects .border{border-radius:14px; overflow:hidden; border:1px solid rgba(15,23,42,0.06); transition:transform .25s ease, box-shadow .25s ease; background:linear-gradient(180deg,#fff,#fff)}
+#projects .border:hover{transform:translateY(-6px); box-shadow:0 18px 40px rgba(2,6,23,0.08)}
+#projects img{width:100%; height:10rem; object-fit:contain; background:linear-gradient(90deg, rgba(124,58,237,0.06), rgba(6,182,212,0.04)); padding:.6rem; border-radius:8px}
+
+/* Buttons */
+.px-4{border-radius:10px; padding:.5rem .9rem}
+.px-4:hover{transform:translateY(-3px); box-shadow:0 8px 18px rgba(2,6,23,0.08)}
+
+/* Social icons */
+.flex.justify-center a{display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:8px; transition:background .18s, transform .18s; color:var(--muted)}
+.flex.justify-center a:hover{transform:translateY(-3px); color:var(--text); background:rgba(15,23,42,0.03)}
+
+/* Footer */
+footer{opacity:.95}
+
+/* Responsive */
+@media (min-width:768px){#projects img{height:12rem}}
+
+/* Accessibility small tweaks */
+a:focus, button:focus{box-shadow:0 0 0 6px rgba(99,102,241,0.06)}
+
+/* Small utility tweaks */
+.rounded-xl{border-radius:16px}
+.shadow-lg{box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+
